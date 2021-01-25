@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+*{
+    text-align: center;
+    font: normal 20pt 'Karla';
+    color: #fff;
+    
+}
+
+body{
+    background: #fafafa;
+
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    background: url(assets/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: url(assets/cactus.png);
+}
+
+.gameover{
+    margin: 200px;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background: url(assets/background.png) repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100vmax;
+    height: 200px;
+}
+
